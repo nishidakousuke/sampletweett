@@ -1,0 +1,8 @@
+<div class="content_post" style="background-image: url(<%= tweet.image %>);">
+  <p class="nickname"><%= tweet.name %></p>
+  <p class="top-text"><%= tweet.text %></p>
+
+  <% if user_signed_in? %>
+  <p class="btn-gradation"><%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get, class: 'sample-1' %>
+  <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete, class: 'sample-1' %></p>
+  <% end %>

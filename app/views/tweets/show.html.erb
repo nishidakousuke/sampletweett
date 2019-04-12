@@ -1,0 +1,61 @@
+ <style type="text/css" href="./style.css"></style>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+<nav class="deep-orange lighten-3">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <% unless user_signed_in? %>
+        <li> <%= link_to "新規登録", new_user_registration_path %></li>
+        <li> <%= link_to "ログイン", new_user_session_path %></li>
+        <% else %>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<script type="text/javascript" src="./app.js"></script>
+
+<div class="main">
+
+
+<div class="post-box">
+  <p class="test"><%= link_to '投稿しよう', "/tweets/new", method: :get, class: 'btn-text-3d' %></p>
+</div>
+
+    <div class="main-content" style="background-image: url(<%= @puus.image %>);">
+    </div>
+
+<div class="image-box">
+<% @tweets.each do |tweet| %>
+  <%= render partial: "tweet", locals: { tweet: tweet } %>
+
+</div>
+<% end %>
+</div>
+</div>
+
+
+<div class="last-box">
+
+<div class="disney">
+  <%= link_to 'トップ画面へ', "/tweets", method: :get, class: 'disney-name2' %>
+</div>
+
+<div class="paginate">
+<%= paginate(@tweets) %>
+</div>
+
+</div>

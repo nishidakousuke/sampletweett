@@ -1,0 +1,403 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 投稿してみよう画面 */
+.review6 {
+  background-image: url('review8.jpg');
+  background-size: cover;
+  padding: 50px;
+}
+
+.review7 {
+  margin-top: 180px;
+}
+
+.review8 {
+  background-image: url('review9.jpg');
+  background-size: cover;
+  padding: 50px;
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 400px;
+  margin: 50px auto;
+}
+.cp_iptxt input[type='text'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  padding-left: 40px;
+  letter-spacing: 1px;
+  border: 0;
+}
+.cp_iptxt input[type='text']:focus {
+  outline: none;
+}
+.cp_iptxt input[type='text']:focus::after {
+  outline: none;
+}
+.cp_iptxt i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 9px 5px;
+  transition: 0.3s;
+  color: #aaaaaa;
+}
+.cp_iptxt::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -1px;
+  content: '';
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #da3c41;
+}
+
+.button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.submit-box {
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.delete {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.delete_after {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.detele_saki {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+/*投稿へボタン*/
+.btn-text-3d {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+  color: #799dec;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+  line-height: 100px;
+}
+
+.test {
+  text-align: center;
+}
+
+.btn-text-3d:active {
+  top: 4px;
+  text-shadow: none;
+}
+
+.post-box {
+  height: 70px;
+  margin: 0 auto;
+}
+
+/* ページネイト */
+.paginate {
+  height: 100px;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  float: left;
+  padding-left: 120px;
+}
+
+.disney {
+  float: left;
+  width: 38%;
+  height: 100px;
+}
+
+.disney-name {
+  letter-spacing: 0.1em;
+  margin: 5px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #c58668;
+  color: black;
+}
+
+.disney-name2 {
+  letter-spacing: 0.1em;
+  margin: 5px 0 0 200px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #c58668;
+  color: black;
+}
+
+.last-box {
+  padding-top: 20px;
+}
+
+.last-box:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* 新規登録 */
+.contents-row {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.new-review {
+  text-align:center;
+  margin:  0;             /* デフォルトCSS打ち消し */
+    font-size:  24px;       /* 文字サイズ指定 */
+    position:  relative;    /* 位置調整 */
+    font-weight:  normal;   /* 文字の太さ調整 */
+    background: linear-gradient(to right, rgb(48, 224, 192) 0%,rgba(96,155,208,0.7) 30%,rgba(125,185,232,0) 100%);/* グラデーション指定 */
+    padding:  10px;         /* 余白指定 */
+    margin-bottom: 15px;    /* 周りの余白指定 */
+    border-radius:  2px;    /* 角丸指定 */
+}
+
+.email {
+  font-size: 20px;
+}
+
+.email-field {
+  height: 30px;
+  width: 500px;
+}
+
+.action {
+  height: 100px;
+  width: 100px;
+  margin: 50px auto 0;
+
+}
+
+.actions {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*色*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px #d27d00;
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+}
+
+.actions:hover {
+  text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
+  6px 0px 15px rgba(255, 255, 240, 0.83);
+}
+
+/* 削除、編集ボタン */
+.sample-1 {
+    color: #FEBA61;
+    font-family: 'Coiny', cursive;
+}
+
+.sample-1:before {
+    top: 0;
+    left: 0;
+    background:
+        radial-gradient(white 25%, transparent 0),
+        radial-gradient(circle farthest-side, #FD9BE2, #FEBA61);
+    background-size: 20px 20px, 100% auto;
+    -webkit-background-clip: text;
+}
+
+.sample-1:after {
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 5px #F32B93;
+}
+
+/* 背景画像 */
+.main {
+  background-image: url("review4.jpg");
+  background-size: cover;
+  height: 650px;
+}
+
+.main-content {
+  background-size: cover;
+  height: 550px;
+  width: 38%;
+  float: left;
+  margin-top: 28px;
+}
+
+.main-content2 {
+  background-image: url("puu3.png");
+  background-size: cover;
+  height: 500px;
+  width: 35%;
+  float: left;
+}
+
+/* 投稿内容 */
+.contain {
+  height: 70px;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: dotted 0.5px black;
+  line-height: 100px;
+  float: right;
+  background-image: url("images.jpeg");
+  background-size: cover;
+  width: 60%;
+}
+
+.review {
+  text-align: center;
+  font-size: 25px;
+}
+
+.content_post {
+  background-size: 100% 100%;
+  height: 200px;
+  width: 30%;
+  float :left;
+  margin: 65px 10px 10px 10px;
+  position: relative;
+  border: solid 3px #fffacd;
+}
+
+.top-text {
+  position:absolute;
+  top: 205px;
+  left: 15px;
+  font-size: 18px;
+  border-bottom: solid 1px #000000;
+}
+
+.nickname {
+  position: absolute;
+  top: -23px;
+  left: 110px;
+  color: #6594e0;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #6594e0;
+}
+
+.btn-gradation {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 12px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 9px 5px;
+  border-radius: 4px;
+  background-image: linear-gradient(-90deg, #FF006E, #FFD500);
+  transition: .5s;
+  background-size: 200%;
+  position: absolute;
+  left: 190px;
+  bottom: -37px;
+  background-position: right center;
+}
+
+.image-box {
+  height: 500px;
+  width: 62%;
+  float: right;
+}
+
+
+/* リセットCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

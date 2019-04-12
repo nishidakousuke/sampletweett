@@ -1,0 +1,32 @@
+<%= form_with(model: Tweet.new, local: true) do |form| %>
+
+<div class="review6">
+
+<div class="review7">
+
+<div class="lets-review">
+<h3 class="review">投稿してみよう</h3>
+</div>
+
+<div class="cp_iptxt">
+<input placeholder="Nick name" type="text" name="name">
+<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>
+
+<div class="cp_iptxt">
+<input placeholder="Image Url" type="text" name="image">
+<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>
+
+
+<div class="cp_iptxt">
+<input placeholder="一言だけ" type="text" name="text">
+<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+</div>
+
+<div class="submit-box">
+<input type="submit" value="投稿する" class="button">
+</div>
+</div>
+<% end %>
+</div>

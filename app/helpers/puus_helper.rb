@@ -1,0 +1,2 @@
+module PuusHelper
+end
